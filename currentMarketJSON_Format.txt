@@ -1,0 +1,53 @@
+{"market":{"pitches":whisky_list}}
+
+whisky_list is a list of all the whiskies on the market - whisky_list = [whisky1, whisky2, ...]
+So, the "pitches" key gives a list of all whiskies:
+
+    currentMarketJSON["market"]["pitches"][0] corresponds to whisky1
+
+Every whisky is a dictionary, the most relevant KEYS are:
+
+    whisky1 = currentMarketJSON["market"]["pitches"][0]
+    whisky1[
+            "distilery" ("CAMERONBRIDGE"),
+            "categoryName" ("GRAIN"),
+            "barrelTypeCode" ("HHR"),
+            "bondYear" (2016),
+            "bondQuarter" ("Q4"),
+            "buyPrices",
+            "sellPrices"
+           ]
+
+"buyPrices" contains a list where each element is a dictionary that most relevantly contains:
+
+    whisky1["buyPrices"][list_index][
+                        "quantity" - amount available at this price,
+                        "limit" - price,
+                       ]
+
+Likewise for "sellPrices".
+
+The list produced by "buyPrices" appears to be ordered from high to low prices, whilst "sellPrices" is opposite.
+
+Therefore, to iterate
+
+    whiskyList = currentMarketJSON["market"]["pitches"]
+    for whisky in whiskyList:
+        distillery = whisky["distillery"]
+        categoryName = whisky["categoryName"]
+        barrelTypeCode = whisky["barrelTypeCode"]
+        bondYear = whisky["bondYear"]
+        bondQuarter = whisky["bondQuarter"]
+
+        cheapestBuyPriceQuantity = whisky["buyPrices"][0]["quantity"]
+        if cheapestBuyPriceQuantity > 50:       # There's a significant amount for sale at this price
+            cheapestBuyPrice = whisky["buyPrices"][0]["limit"]
+            df["Prices"].add(cheapestBuyPrice)      # Lazy way of adding to a dataframe; won't actually work.
+            df["Quantity"].add(cheapestBuyPriceQuantity)
+
+Finally, to get the time that the data was scraped at:
+
+    time = currentMarketJSON["updateTimeString"]
+        # This looks like: "12 May 2017 16:18:02 +09:30"
+
+We want to run this script once every: 1/5/10/20/30/60 minutes or something.

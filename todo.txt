@@ -1,0 +1,26 @@
+Write documentation for the methods.
+    Provide instructions on what order to run them in and when they need to be run.
+
+Improve the way whisky_excel_IO.ScrapeNewData() works so that it goes through all data in the
+whisky["sellPrices"][i]["quantity"] list to find the cheapest price instead of assuming it is in the 0th position.
+
+Change the way directory is handled so that it just creates/accesses folders in the working directory of the script
+instead of using an absolute one.
+
+
+update_data.py
+    Implement countdown till next update.
+    Make it so that if the update fails, try again at some set time (E.G: 30 seconds) instead of waiting for the next
+    update tick.
+
+Save the data in csv format? .xlsx uses a lot of space.
+
+
+TO HOST PROGRAM ON SERVER:
+
+
+Determine which whiskies are the most traded/volatile.
+
+THE TIMESTAMPS ARE IN BRITISH SUMMER TIME NOW FOR SOME REASON.
+DETERMINE THE UPDATE FREQUENCY?
+

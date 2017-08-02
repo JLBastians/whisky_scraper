@@ -1,0 +1,93 @@
+[<script src="https://d79q7te7kdamf.cloudfront.net/resources/gzip_1643718302/javascript/widscripts.js" type="text/javascript"></script>, <script src="https://d79q7te7kdamf.cloudfront.net/resources/gzip_11558432133/javascript/orderpanel.js" type="text/javascript"></script>, <script type="application/javascript">
+	
+
+	$(window).unload(function () {
+		window.autologout && window.autologout.kill();
+	});
+</script>, <script src="https://d79q7te7kdamf.cloudfront.net/resources/gzip_1N1115853348/javascript/chart.js" type="text/javascript"></script>, <script type="text/javascript">
+		$(document).ready(function() {
+			var whiskyList = [{"distillery":"CAMERONBRIDGE","categoryName":"GRAIN","barrelTypeCode":"HHR","bonds":[{"bondYear":2016,"bondQuarter":"Q4"},{"bondYear":2015,"bondQuarter":"Q3"},{"bondYear":2014,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q3"}],"formattedDistillery":"cameronbridge"},{"distillery":"CAMERONBRIDGE","categoryName":"GRAIN","barrelTypeCode":"SBR","bonds":[{"bondYear":2015,"bondQuarter":"Q3"}],"formattedDistillery":"cameronbridge"},{"distillery":"INVERGORDON","categoryName":"GRAIN","barrelTypeCode":"BBR","bonds":[{"bondYear":2015,"bondQuarter":"Q2"},{"bondYear":2015,"bondQuarter":"Q1"}],"formattedDistillery":"invergordon"},{"distillery":"INVERGORDON","categoryName":"GRAIN","barrelTypeCode":"HHR","bonds":[{"bondYear":2015,"bondQuarter":"Q2"},{"bondYear":2015,"bondQuarter":"Q1"}],"formattedDistillery":"invergordon"},{"distillery":"NORTH_BRITISH","categoryName":"GRAIN","barrelTypeCode":"HHR","bonds":[{"bondYear":2016,"bondQuarter":"Q2"},{"bondYear":2014,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q3"}],"formattedDistillery":"north-british"},{"distillery":"STARLAW","categoryName":"GRAIN","barrelTypeCode":"BBF","bonds":[{"bondYear":2017,"bondQuarter":"Q1"},{"bondYear":2016,"bondQuarter":"Q1"}],"formattedDistillery":"starlaw"},{"distillery":"ARDMORE","categoryName":"SINGLE_MALT","barrelTypeCode":"BBR","bonds":[{"bondYear":2016,"bondQuarter":"Q4"},{"bondYear":2016,"bondQuarter":"Q3"},{"bondYear":2015,"bondQuarter":"Q3"},{"bondYear":2014,"bondQuarter":"Q4"},{"bondYear":2014,"bondQuarter":"Q3"},{"bondYear":2013,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q3"}],"formattedDistillery":"ardmore"},{"distillery":"AUCHENTOSHAN","categoryName":"SINGLE_MALT","barrelTypeCode":"BBF","bonds":[{"bondYear":2013,"bondQuarter":"Q2"}],"formattedDistillery":"auchentoshan"},{"distillery":"AUCHENTOSHAN","categoryName":"SINGLE_MALT","barrelTypeCode":"BBR","bonds":[{"bondYear":2013,"bondQuarter":"Q2"}],"formattedDistillery":"auchentoshan"},{"distillery":"AUCHROISK","categoryName":"SINGLE_MALT","barrelTypeCode":"HHR","bonds":[{"bondYear":2016,"bondQuarter":"Q2"},{"bondYear":2014,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q3"},{"bondYear":2012,"bondQuarter":"Q4"}],"formattedDistillery":"auchroisk"},{"distillery":"BENRINNES","categoryName":"SINGLE_MALT","barrelTypeCode":"BBR","bonds":[{"bondYear":2016,"bondQuarter":"Q4"},{"bondYear":2015,"bondQuarter":"Q4"}],"formattedDistillery":"benrinnes"},{"distillery":"BENRINNES","categoryName":"SINGLE_MALT","barrelTypeCode":"HHR","bonds":[{"bondYear":2014,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q4"},{"bondYear":2012,"bondQuarter":"Q4"},{"bondYear":2012,"bondQuarter":"Q3"}],"formattedDistillery":"benrinnes"},{"distillery":"BLAIR_ATHOL","categoryName":"SINGLE_MALT","barrelTypeCode":"HHR","bonds":[{"bondYear":2014,"bondQuarter":"Q3"},{"bondYear":2013,"bondQuarter":"Q4"},{"bondYear":2012,"bondQuarter":"Q4"}],"formattedDistillery":"blair-athol"},{"distillery":"BLAIR_ATHOL","categoryName":"SINGLE_MALT","barrelTypeCode":"SBR","bonds":[{"bondYear":2016,"bondQuarter":"Q2"}],"formattedDistillery":"blair-athol"},{"distillery":"BUNNAHABHAIN","categoryName":"SINGLE_MALT","barrelTypeCode":"BBF","bonds":[{"bondYear":2016,"bondQuarter":"Q4"}],"formattedDistillery":"bunnahabhain"},{"distillery":"CAOL_ILA","categoryName":"SINGLE_MALT","barrelTypeCode":"HHR","bonds":[{"bondYear":2017,"bondQuarter":"Q1"}],"formattedDistillery":"caol-ila"},{"distillery":"DAILUAINE","categoryName":"SINGLE_MALT","barrelTypeCode":"HHR","bonds":[{"bondYear":2014,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q4"},{"bondYear":2012,"bondQuarter":"Q4"}],"formattedDistillery":"dailuaine"},{"distillery":"DAILUAINE","categoryName":"SINGLE_MALT","barrelTypeCode":"SBR","bonds":[{"bondYear":2016,"bondQuarter":"Q4"}],"formattedDistillery":"dailuaine"},{"distillery":"GLEN_GARIOCH","categoryName":"SINGLE_MALT","barrelTypeCode":"BBF","bonds":[{"bondYear":2015,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q2"}],"formattedDistillery":"glen-garioch"},{"distillery":"GLEN_GARIOCH","categoryName":"SINGLE_MALT","barrelTypeCode":"BBR","bonds":[{"bondYear":2013,"bondQuarter":"Q2"}],"formattedDistillery":"glen-garioch"},{"distillery":"GLEN_MORAY","categoryName":"SINGLE_MALT","barrelTypeCode":"BBF","bonds":[{"bondYear":2017,"bondQuarter":"Q1"},{"bondYear":2016,"bondQuarter":"Q3"}],"formattedDistillery":"glen-moray"},{"distillery":"GLEN_SPEY","categoryName":"SINGLE_MALT","barrelTypeCode":"HHR","bonds":[{"bondYear":2016,"bondQuarter":"Q2"},{"bondYear":2014,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q4"},{"bondYear":2012,"bondQuarter":"Q4"}],"formattedDistillery":"glen-spey"},{"distillery":"INCHGOWER","categoryName":"SINGLE_MALT","barrelTypeCode":"BBR","bonds":[{"bondYear":2016,"bondQuarter":"Q4"}],"formattedDistillery":"inchgower"},{"distillery":"INCHGOWER","categoryName":"SINGLE_MALT","barrelTypeCode":"HHR","bonds":[{"bondYear":2016,"bondQuarter":"Q4"},{"bondYear":2015,"bondQuarter":"Q4"},{"bondYear":2014,"bondQuarter":"Q4"},{"bondYear":2013,"bondQuarter":"Q4"},{"bondYear":2012,"bondQuarter":"Q4"}],"formattedDistillery":"inchgower"},{"distillery":"STRATHENRY","categoryName":"SINGLE_MALT","barrelTypeCode":"BBR","bonds":[{"bondYear":2017,"bondQuarter":"Q1"}],"formattedDistillery":"strathenry"},{"distillery":"TOBERMORY","categoryName":"SINGLE_MALT","barrelTypeCode":"BBF","bonds":[{"bondYear":2016,"bondQuarter":"Q3"}],"formattedDistillery":"tobermory"},{"distillery":"TULLIBARDINE","categoryName":"SINGLE_MALT","barrelTypeCode":"BBF","bonds":[{"bondYear":2016,"bondQuarter":"Q2"},{"bondYear":2015,"bondQuarter":"Q4"}],"formattedDistillery":"tullibardine"}];
+
+			$( "#securityList" ).change(function() {
+				var $selectedDropdown = $( this ).find( 'option:selected' );
+				var selectedDistillery = $selectedDropdown.data( 'distillery' );
+				var selectedBarrelTypeCode = $selectedDropdown.data( 'barreltypecode' );
+				var security = _.filter(whiskyList, function(security) {
+					return security.distillery == selectedDistillery && security.barrelTypeCode == selectedBarrelTypeCode;
+				})[0];
+				window.location.href = '/' + security.formattedDistillery + '/' + security.bonds[0].bondYear + '/' + security.bonds[0].bondQuarter + '/' + security.barrelTypeCode + '/chart.do';
+			});
+
+			$( "#bondList" ).change(function() {
+				var $selectedDropdown = $('input[name=bondValues]:radio:checked');
+				var selectedBondYear = $selectedDropdown.data("bondyear");
+				var selectedBondQuarter = $selectedDropdown.data("bondquarter");
+				window.location.href = '/ardmore/' + selectedBondYear + '/' + selectedBondQuarter + '/BBR/chart.do';
+			});
+
+			Chart.drawChart( $('#chartContainer'), [{"day":376,"dealDate":1440547200000,"priceAvg":2.88},{"day":382,"dealDate":1441065600000,"priceAvg":2.88},{"day":390,"dealDate":1441756800000,"priceAvg":2.89},{"day":396,"dealDate":1442275200000,"priceAvg":2.9},{"day":398,"dealDate":1442448000000,"priceAvg":2.9},{"day":403,"dealDate":1442880000000,"priceAvg":2.91},{"day":405,"dealDate":1443052800000,"priceAvg":2.91},{"day":413,"dealDate":1443744000000,"priceAvg":2.91},{"day":416,"dealDate":1444003200000,"priceAvg":2.93},{"day":417,"dealDate":1444089600000,"priceAvg":2.93},{"day":418,"dealDate":1444176000000,"priceAvg":2.93},{"day":421,"dealDate":1444435200000,"priceAvg":2.92},{"day":423,"dealDate":1444608000000,"priceAvg":2.94},{"day":424,"dealDate":1444694400000,"priceAvg":2.94},{"day":425,"dealDate":1444780800000,"priceAvg":2.92},{"day":427,"dealDate":1444953600000,"priceAvg":2.95},{"day":434,"dealDate":1445558400000,"priceAvg":2.96},{"day":440,"dealDate":1446076800000,"priceAvg":2.97},{"day":441,"dealDate":1446163200000,"priceAvg":2.97},{"day":444,"dealDate":1446422400000,"priceAvg":2.97},{"day":445,"dealDate":1446508800000,"priceAvg":2.99},{"day":447,"dealDate":1446681600000,"priceAvg":2.97},{"day":449,"dealDate":1446854400000,"priceAvg":2.99},{"day":451,"dealDate":1447027200000,"priceAvg":2.97},{"day":456,"dealDate":1447459200000,"priceAvg":3},{"day":461,"dealDate":1447891200000,"priceAvg":3.02},{"day":462,"dealDate":1447977600000,"priceAvg":3.02},{"day":472,"dealDate":1448841600000,"priceAvg":3.03},{"day":473,"dealDate":1448928000000,"priceAvg":3.03},{"day":491,"dealDate":1450483200000,"priceAvg":3.06},{"day":493,"dealDate":1450656000000,"priceAvg":3.06},{"day":494,"dealDate":1450742400000,"priceAvg":3.06},{"day":508,"dealDate":1451952000000,"priceAvg":3.08},{"day":535,"dealDate":1454284800000,"priceAvg":3.13},{"day":543,"dealDate":1454976000000,"priceAvg":3.14},{"day":557,"dealDate":1456185600000,"priceAvg":3.18},{"day":566,"dealDate":1456963200000,"priceAvg":3.19},{"day":571,"dealDate":1457395200000,"priceAvg":3.2},{"day":572,"dealDate":1457481600000,"priceAvg":3.2},{"day":573,"dealDate":1457568000000,"priceAvg":3.2},{"day":576,"dealDate":1457827200000,"priceAvg":3.2},{"day":583,"dealDate":1458432000000,"priceAvg":3.21},{"day":584,"dealDate":1458518400000,"priceAvg":3.21},{"day":586,"dealDate":1458691200000,"priceAvg":3.22},{"day":592,"dealDate":1459209600000,"priceAvg":3.22},{"day":599,"dealDate":1459814400000,"priceAvg":3.23},{"day":602,"dealDate":1460073600000,"priceAvg":3.23},{"day":606,"dealDate":1460419200000,"priceAvg":3.24},{"day":608,"dealDate":1460592000000,"priceAvg":3.23},{"day":620,"dealDate":1461628800000,"priceAvg":3.26},{"day":627,"dealDate":1462233600000,"priceAvg":3.26},{"day":629,"dealDate":1462406400000,"priceAvg":3.27},{"day":633,"dealDate":1462752000000,"priceAvg":3.27},{"day":635,"dealDate":1462924800000,"priceAvg":3.28},{"day":640,"dealDate":1463356800000,"priceAvg":3.28},{"day":642,"dealDate":1463529600000,"priceAvg":3.28},{"day":644,"dealDate":1463702400000,"priceAvg":3.28},{"day":645,"dealDate":1463788800000,"priceAvg":3.28},{"day":646,"dealDate":1463875200000,"priceAvg":3.28},{"day":649,"dealDate":1464134400000,"priceAvg":3.3},{"day":650,"dealDate":1464220800000,"priceAvg":3.3},{"day":657,"dealDate":1464825600000,"priceAvg":3.3},{"day":658,"dealDate":1464912000000,"priceAvg":3.3},{"day":670,"dealDate":1465948800000,"priceAvg":3.29},{"day":679,"dealDate":1466726400000,"priceAvg":3.34},{"day":682,"dealDate":1466985600000,"priceAvg":3.34},{"day":691,"dealDate":1467763200000,"priceAvg":3.36},{"day":700,"dealDate":1468540800000,"priceAvg":3.37},{"day":701,"dealDate":1468627200000,"priceAvg":3.38},{"day":706,"dealDate":1469059200000,"priceAvg":3.38},{"day":717,"dealDate":1470009600000,"priceAvg":3.4},{"day":718,"dealDate":1470096000000,"priceAvg":3.4},{"day":720,"dealDate":1470268800000,"priceAvg":3.4},{"day":724,"dealDate":1470614400000,"priceAvg":3.41},{"day":725,"dealDate":1470700800000,"priceAvg":3.41},{"day":726,"dealDate":1470787200000,"priceAvg":3.41},{"day":727,"dealDate":1470873600000,"priceAvg":3.41},{"day":728,"dealDate":1470960000000,"priceAvg":3.42},{"day":729,"dealDate":1471046400000,"priceAvg":3.42},{"day":731,"dealDate":1471219200000,"priceAvg":3.42},{"day":732,"dealDate":1471305600000,"priceAvg":3.43},{"day":733,"dealDate":1471392000000,"priceAvg":3.43},{"day":734,"dealDate":1471478400000,"priceAvg":3.43},{"day":735,"dealDate":1471564800000,"priceAvg":3.43},{"day":736,"dealDate":1471651200000,"priceAvg":3.43},{"day":737,"dealDate":1471737600000,"priceAvg":3.43},{"day":738,"dealDate":1471824000000,"priceAvg":3.43},{"day":739,"dealDate":1471910400000,"priceAvg":3.43},{"day":741,"dealDate":1472083200000,"priceAvg":3.44},{"day":742,"dealDate":1472169600000,"priceAvg":3.44},{"day":744,"dealDate":1472342400000,"priceAvg":3.44},{"day":746,"dealDate":1472515200000,"priceAvg":3.44},{"day":747,"dealDate":1472601600000,"priceAvg":3.45},{"day":748,"dealDate":1472688000000,"priceAvg":3.45},{"day":749,"dealDate":1472774400000,"priceAvg":3.45},{"day":751,"dealDate":1472947200000,"priceAvg":3.45},{"day":752,"dealDate":1473033600000,"priceAvg":3.45},{"day":754,"dealDate":1473206400000,"priceAvg":3.45},{"day":756,"dealDate":1473379200000,"priceAvg":3.46},{"day":757,"dealDate":1473465600000,"priceAvg":3.46},{"day":759,"dealDate":1473638400000,"priceAvg":3.46},{"day":760,"dealDate":1473724800000,"priceAvg":3.46},{"day":761,"dealDate":1473811200000,"priceAvg":3.46},{"day":762,"dealDate":1473897600000,"priceAvg":3.46},{"day":763,"dealDate":1473984000000,"priceAvg":3.47},{"day":764,"dealDate":1474070400000,"priceAvg":3.47},{"day":766,"dealDate":1474243200000,"priceAvg":3.47},{"day":767,"dealDate":1474329600000,"priceAvg":3.49},{"day":768,"dealDate":1474416000000,"priceAvg":3.47},{"day":769,"dealDate":1474502400000,"priceAvg":3.49},{"day":770,"dealDate":1474588800000,"priceAvg":3.49},{"day":773,"dealDate":1474848000000,"priceAvg":3.46},{"day":795,"dealDate":1476748800000,"priceAvg":3.5},{"day":796,"dealDate":1476835200000,"priceAvg":3.5},{"day":806,"dealDate":1477699200000,"priceAvg":3.5},{"day":808,"dealDate":1477872000000,"priceAvg":3.5},{"day":811,"dealDate":1478131200000,"priceAvg":3.5},{"day":816,"dealDate":1478563200000,"priceAvg":3.55},{"day":818,"dealDate":1478736000000,"priceAvg":3.5},{"day":832,"dealDate":1479945600000,"priceAvg":3.52},{"day":850,"dealDate":1481500800000,"priceAvg":3.53},{"day":851,"dealDate":1481587200000,"priceAvg":3.53},{"day":867,"dealDate":1482969600000,"priceAvg":3.56},{"day":871,"dealDate":1483315200000,"priceAvg":3.53},{"day":873,"dealDate":1483488000000,"priceAvg":3.53},{"day":888,"dealDate":1484784000000,"priceAvg":3.55},{"day":892,"dealDate":1485129600000,"priceAvg":3.58},{"day":908,"dealDate":1486512000000,"priceAvg":3.64},{"day":910,"dealDate":1486684800000,"priceAvg":3.64},{"day":920,"dealDate":1487548800000,"priceAvg":3.62},{"day":930,"dealDate":1488412800000,"priceAvg":3.65},{"day":931,"dealDate":1488499200000,"priceAvg":3.65},{"day":953,"dealDate":1490400000000,"priceAvg":3.72},{"day":956,"dealDate":1490659200000,"priceAvg":3.73},{"day":958,"dealDate":1490832000000,"priceAvg":3.73},{"day":964,"dealDate":1491350400000,"priceAvg":3.71},{"day":966,"dealDate":1491523200000,"priceAvg":3.74},{"day":970,"dealDate":1491868800000,"priceAvg":3.74},{"day":976,"dealDate":1492387200000,"priceAvg":3.75},{"day":977,"dealDate":1492473600000,"priceAvg":3.75},{"day":978,"dealDate":1492560000000,"priceAvg":3.72}]);
+
+			$.getJSON( '/view_market_json.do', function(json) {
+				var filteredJson = _.filter(json.market.pitches, function(p) { return p.securityId == 'SPIRIT000128' && p.considerationCurrency == 'GBP'});
+				var buyPrice = filteredJson[0].buyPrices[0];
+				var sellPrice = filteredJson[0].sellPrices[0];
+
+				var litreSymbol = 'LPA';
+
+				// render buyPrice
+				var message;
+				if (buyPrice) {
+					message = FormatMessage.fmtCurrency(buyPrice.limit, "GBP") + ' / ' + litreSymbol;
+				} else {
+					message = 'none available';
+				}
+				$( '.buyPrice' ).html('<b>' + message + '</b>');
+
+				// render sellPrice
+				if (sellPrice) {
+					message = FormatMessage.fmtCurrency(sellPrice.limit, "GBP") + ' / ' + litreSymbol;
+				} else {
+					message = 'none available';
+				}
+				$( '.sellPrice' ).html('<b>' + message + '</b>');
+			});
+		});
+	</script>, <script src="https://d79q7te7kdamf.cloudfront.net/resources/gzip_12031355696/javascript/modernizr.js" type="text/javascript"></script>, <script type="text/javascript">
+	if (typeof dataLayer === 'undefined') {
+		dataLayer = [{
+				'language': 'en',
+				'loggedIn': 'false'
+			}];
+	} else {
+		dataLayer.push({
+			'language': 'en',
+			'loggedIn': 'false'
+		});
+	}
+
+	</script>, <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PP2GZP');</script>, <script type="text/javascript">
+	$(document).ready(function(){
+		if (Modernizr.touch) {
+			var $menus = $(".hover-menu").siblings("ul");
+
+			$(".hover-menu").click(function (evt){
+				evt.preventDefault();
+				evt.stopPropagation();
+				var $menu = $(this).siblings("ul");
+				// Close any open menus
+				$menus.not($menu).hide();
+				// Show the menu
+				$menu.show();
+			});
+
+			// Listen to a click away from the menu and hide menus
+			$(document).click(function() {
+				$menus.hide();
+			});
+		};
+	});
+</script>]

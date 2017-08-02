@@ -12,10 +12,8 @@ from datetime import timedelta
 from os import listdir, getcwd, path, mkdir
 import pandas as pd
 from WhiskyClass import Whisky
-from proforma import STANDARD_COLUMNS, METADATA_FILENAME
+from proforma import STANDARD_COLUMNS, METADATA_FILENAME, SAVE_PATH_CURRENT, SAVE_PATH_HISTORICAL
 
-SAVE_PATH_HISTORICAL = path.join(getcwd(), path.join("spreadsheets", "historical"))
-SAVE_PATH_CURRENT = path.join(getcwd(), path.join("spreadsheets", "current"))
 URL_BASE = "https://www.whiskyinvestdirect.com/"
 
 '''

@@ -3,7 +3,7 @@
 This contains proforma templates that are used elsewhere.
 
 '''
-
+from os import path, getcwd
 STANDARD_COLUMNS = ["Date",
                     "Cheapest Buy Price", "Cheapest Buy Quantity",
                     "Middle Buy Price", "Middle Buy Quantity",
@@ -16,3 +16,6 @@ STANDARD_COLUMNS = ["Date",
                     ]
 
 METADATA_FILENAME = "whisky_metadata.xlsx"
+
+SAVE_PATH_HISTORICAL = path.join(getcwd(), path.join("spreadsheets", "historical"))
+SAVE_PATH_CURRENT = path.join(getcwd(), path.join("spreadsheets", "current"))

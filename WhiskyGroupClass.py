@@ -1,6 +1,6 @@
 import pandas as pd
 from os import listdir, path, getcwd
-from whisky_excel_IO_v2 import SAVE_PATH_CURRENT, SAVE_PATH_HISTORICAL
+from proforma import SAVE_PATH_CURRENT, SAVE_PATH_HISTORICAL
 
 
 class WhiskyGroup:
